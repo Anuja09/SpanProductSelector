@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="width: 412px;">
+    <tbody>
+    <tr>
+        <td style="width: 500px; text-align: center;">SPAN Product Selection</td>
+    </tr>
+    </tbody>
+</table>
+<form method="POST">
+    <table style="width: 500px;">
+        <tbody>
+        <tr>
+            <td style="width: 266px;">TDS (ppm)&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input type="text" name="tds" th:value="${input_tds}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 266px;">Temperature (F)&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input type="text" name="temperature" th:value="${input_temperature}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 266px;">Calcium (mg/l as CaCO3)&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input type="text" name="calcium" th:value="${input_calcium}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 266px;">Total Alkalinity (mg/l as CaCO3)&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input type="text" name="alkalinity" th:value="${input_alkalinity}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 266px;">pH&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input type="text" name="ph" th:value="${input_ph}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 266px;">&nbsp;</td>
+            <td style="width: 143px;">&nbsp;<input name="Reset" type="Reset" value="Reset" />&nbsp;<input
+                    name="Submit" type="Submit" value="Submit"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+<p>&nbsp;</p>
+<table style="width: 500px;">
+    <tbody>
+    <tr>
+        <td style="width: 266px;">Saturation pH of the water</td>
+        <td style="width: 164px;">
+            <div type="text" name="saturation_ph" th:text="${saturation_ph}"/>
+    </tr>
+    <tr>
+        <td style="width: 266px;">LSI</td>
+        <td style="width: 164px;">
+            <div name="lsi" th:text="${lsi}"/>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 266px;">RSI</td>
+        <td style="width: 164px;">
+            <div name="rsi" th:text="${rsi}"/>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 266px;">CaCO3 Formation Potential</td>
+        <td style="width: 400px;">
+            <div name="formation_potential" th:text="${formation_potential}"/>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 266px;">WTC Product Name</td>
+        <td style="width: 400px;">
+            <div name="product_name" th:text="${product_name}"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+
+</body>
+</html>
